@@ -6,7 +6,12 @@
 <title>SERV & REP Mantenimiento · Bobinado de motores en Cosquín</title>
 <meta name="description" content="Bobinado y reparación de motores en Cosquín: bombas de agua, lavarropas, amoladoras, centrífugas, sumergibles y transformadores. Pedí tu presupuesto por WhatsApp.">
 <meta name="theme-color" content="#0e1a2b">
-<link rel="icon" href="logo.png">
+<link rel="icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<meta property="og:title" content="SERV & REP Mantenimiento · Bobinado de motores en Cosquín">
+<meta property="og:description" content="Bobinado y reparación de motores. Pedí tu presupuesto por WhatsApp.">
+<meta property="og:image" content="https://gerardodamian.github.io/bobinados-cristian/icon-512.png">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700;1,800&family=Barlow:wght@400;500;600&display=swap">
 <style>
 :root{--blue:#1e63b0;--navy:#0e1a2b;--red:#d62a1f;--yellow:#f6c21a;--paper:#f6f7f9;--ink:#16202e;--mute:#566274;
@@ -24,12 +29,13 @@ section{padding:64px 0}
 .btn-wa{background:#1fa855;color:#fff}.btn-red{background:var(--red);color:#fff}.btn-line{border:2px solid #fff;color:#fff}
 header{position:sticky;top:0;z-index:5;background:var(--navy)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-header img{height:46px;display:block}
+header img{height:50px;display:block}
+.hero-logo{width:min(560px,90%);display:block;margin-bottom:30px}
 header nav{display:flex;gap:20px;align-items:center}
 header nav a{color:#dbe6f5;text-decoration:none;font-weight:500;font-size:.95rem}
 header .btn{padding:9px 16px;color:#fff}
 .hero{background:var(--navy);color:#fff;padding:72px 0 0;overflow:hidden}
-.hero h1{font-size:clamp(3rem,10vw,6.4rem);max-width:11ch}
+.hero h1{font-size:clamp(2.6rem,8vw,5rem);max-width:12ch}
 .hero h1 span{color:var(--yellow)}
 .hero p{max-width:46ch;margin:20px 0 28px;color:#c9d6e8;font-size:1.15rem}
 .hero .acts{display:flex;gap:12px;flex-wrap:wrap}
@@ -58,6 +64,12 @@ summary{font-weight:600;cursor:pointer}
 details p{margin-top:8px;color:var(--mute)}
 .contact{background:var(--navy);color:#fff}
 .contact h2{color:#fff}.contact p{color:#c9d6e8;margin-bottom:8px}
+.suc{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:22px 0 8px}
+.suc div{border-left:6px solid var(--yellow);background:#16263b;padding:18px}
+.suc h3{font-size:1.5rem;margin-bottom:6px}.suc a{color:var(--yellow);font-weight:600}
+.share{display:grid;gap:28px;grid-template-columns:auto 1fr;align-items:center}
+.share img{width:190px;height:190px;border:6px solid #fff;border-radius:6px;background:#fff}
+@media(max-width:600px){.share{grid-template-columns:1fr;justify-items:start}}
 .contact .acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
 footer{background:#08111e;color:#8fa0b8;text-align:center;padding:18px;font-size:.85rem}
 .fab{position:fixed;right:16px;bottom:16px;z-index:6;box-shadow:0 4px 14px rgba(0,0,0,.3)}
@@ -67,14 +79,15 @@ footer{background:#08111e;color:#8fa0b8;text-align:center;padding:18px;font-size
 <body>
 <header><div class="wrap">
   <a href="#inicio"><img src="logo.png" alt="SERV & REP Mantenimiento"></a>
-  <nav><a href="#servicios">Servicios</a><a href="#presupuesto">Presupuesto</a><a href="#dudas">Preguntas</a><a class="btn btn-wa" data-wa="Hola, quiero hacer una consulta.">WhatsApp</a></nav>
+  <nav><a href="#servicios">Servicios</a><a href="#contacto">Sucursales</a><a href="#presupuesto">Presupuesto</a><a href="#dudas">Preguntas</a><a class="btn btn-wa" data-wa="me comunico desde la web de SERV & REP Mantenimiento y quisiera hacer una consulta.">WhatsApp</a></nav>
 </div></header>
 
 <main id="inicio">
 <div class="hero"><div class="wrap">
+  <img class="hero-logo" src="logo.png" alt="SERV & REP Mantenimiento">
   <h1>Tu motor <span>vuelve a andar.</span></h1>
   <p>Bobinado y reparación de motores de todo tipo en Cosquín: bombas de agua, lavarropas, amoladoras y más. Contanos qué le pasa y te pasamos el presupuesto.</p>
-  <div class="acts"><a class="btn btn-red" href="#presupuesto">Pedir presupuesto</a><a class="btn btn-line" data-wa="Hola, quiero hacer una consulta.">Consultar por WhatsApp</a></div>
+  <div class="acts"><a class="btn btn-red" href="#presupuesto">Pedir presupuesto</a><a class="btn btn-line" data-wa="me comunico desde la web de SERV & REP Mantenimiento y quisiera hacer una consulta.">Consultar por WhatsApp</a></div>
 </div><div class="stripe"></div></div>
 
 <section id="servicios"><div class="wrap">
@@ -108,7 +121,7 @@ footer{background:#08111e;color:#8fa0b8;text-align:center;padding:18px;font-size
   </div>
   <div class="card">
     <h2>¿Necesita bobinado?</h2>
-    <p style="color:var(--mute)">Una guía rápida. Es orientativa: el diagnóstico real se hace en el taller.</p>
+    <p style="color:var(--mute)">Una guía rápida y orientativa. El diagnóstico definitivo se realiza en el taller.</p>
     <label for="d-sym">¿Qué síntoma tiene?</label>
     <select id="d-sym"></select>
     <div id="diag-out" role="status"></div>
@@ -125,23 +138,37 @@ footer{background:#08111e;color:#8fa0b8;text-align:center;padding:18px;font-size
 </div></section>
 
 <section class="contact" id="contacto"><div class="wrap">
-  <h2>Visitanos en Cosquín</h2>
-  <p id="addr"></p>
-  <div class="acts">
-    <a class="btn btn-wa" data-wa="Hola, quiero hacer una consulta.">Escribinos por WhatsApp</a>
-    <a class="btn btn-line" id="map" target="_blank" rel="noopener">Cómo llegar</a>
-    <a class="btn btn-line" id="call">Llamar</a>
+  <h2>Dos sucursales en Cosquín</h2>
+  <p>Horario de atención: lunes a viernes de 9 a 13 hs.</p>
+  <div class="suc" id="suc"></div>
+  <div class="acts"><a class="btn btn-wa" data-wa="me comunico desde la web de SERV & REP Mantenimiento y quisiera hacer una consulta.">Escribinos por WhatsApp</a><a class="btn btn-line" id="call">Llamar</a></div>
+</div></section>
+
+<section id="app"><div class="wrap share">
+  <img src="qr.png" alt="Código QR para abrir la web de SERV & REP">
+  <div>
+    <h2>Llevala en tu celular</h2>
+    <p style="color:var(--mute);margin-bottom:16px">Escaneá el código para abrir la web, o instalala como app para tener el WhatsApp del taller a un toque.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <button class="btn btn-red" id="install" hidden>Instalar app</button>
+      <button class="btn btn-wa" id="share">Compartir</button>
+    </div>
+    <p class="note" id="ios" hidden>En iPhone: tocá el botón Compartir de Safari y elegí "Agregar a inicio".</p>
   </div>
 </div></section>
 </main>
 <footer>© <span id="yr"></span> SERV & REP Mantenimiento · Cosquín, Córdoba</footer>
-<a class="btn btn-wa fab" data-wa="Hola, quiero hacer una consulta.">WhatsApp</a>
+<a class="btn btn-wa fab" data-wa="me comunico desde la web de SERV & REP Mantenimiento y quisiera hacer una consulta.">WhatsApp</a>
 
 <script>
 const CFG={
   wa:"543541552523",          // WhatsApp (sin +, con código de país)
   tel:"+543541552523",
-  dir:"San Martín 1348, Cosquín, Córdoba"
+  url:"https://gerardodamian.github.io/bobinados-cristian/",
+  sucursales:[
+    {n:"Casa central",d:"San Martín 1348, Cosquín, Córdoba",map:"https://www.google.com/maps/place/Serv+%26+Rep/@-31.2466158,-64.4672299,20z/data=!4m10!1m2!2m1!1sSERV+%26+REP+Mantenimiento,+Santa+Fe+454,+Pasaje,+Cosqu%C3%ADn,+C%C3%B3rdoba!3m6!1s0x942d7b15a75b2c2d:0x967bef90e0b6876a!8m2!3d-31.2466177!4d-64.4667973!15sCkJTRVJWIHkgUkVQIE1hbnRlbmltaWVudG8sIFNhbnRhIEZlIDQ1NCwgUGFzYWplLCBDb3NxdcOtbiwgQ8OzcmRvYmGSARRjb25zdHJ1Y3Rpb25fY29tcGFueeABAA!16s%2Fg%2F11pwjg_zjf"},
+    {n:"Sucursal Pasaje",d:"Santa Fe 454, Pasaje, Cosquín, Córdoba",map:"https://www.google.com/maps/search/SERV+%26+REP+Mantenimiento,+Santa+Fe+454,+Pasaje,+Cosqu%C3%ADn,+C%C3%B3rdoba/@-31.2480232,-64.4649979,20.5z"}
+  ]
 };
 const SERVICIOS=[
  ["Bombas de agua","Centrífugas, periféricas y sumergibles para casa, campo y riego."],
@@ -154,13 +181,14 @@ const SERVICIOS=[
  ["Otros equipos","Traé el tuyo y lo revisamos."]
 ];
 const SINTOMAS={
- "No arranca y hace zumbido":"Puede ser el capacitor, un rodamiento trabado o el bobinado dañado. Conviene no insistir: forzarlo puede quemarlo.",
- "Se calienta mucho o huele a quemado":"Es una señal frecuente de bobinado dañado. Apagalo y no lo uses hasta revisarlo.",
- "Salta la térmica o el disyuntor":"Puede haber un cortocircuito en el bobinado. Hay que medirlo en el taller.",
- "Hace ruido o vibra":"Suele ser desgaste de rodamientos. A veces no hace falta bobinar.",
- "Gira pero pierde fuerza":"Puede ser un bobinado parcialmente dañado o un problema de capacitor."
+ "No arranca y hace zumbido":"Puede deberse a un capacitor en mal estado, a un rodamiento trabado o a un daño en el bobinado. Le recomendamos no insistir con el arranque, ya que forzarlo podría quemar el motor. Traiga el equipo para una revisión.",
+ "Se calienta mucho o huele a quemado":"Es una señal frecuente de bobinado dañado. Le recomendamos desconectar el equipo y no utilizarlo hasta que sea revisado, para evitar un daño mayor.",
+ "Salta la térmica o el disyuntor":"Puede indicar un cortocircuito en el bobinado o una pérdida a tierra. Es necesario realizar mediciones en el taller para confirmarlo.",
+ "Hace ruido o vibra":"Generalmente se debe al desgaste de los rodamientos. En muchos casos no es necesario rebobinar el motor. Lo revisamos y le informamos.",
+ "Gira pero pierde fuerza":"Puede tratarse de un bobinado parcialmente dañado o de un problema en el capacitor. Con una revisión en el taller le confirmamos la causa."
 };
-const wa=t=>`https://wa.me/${CFG.wa}?text=${encodeURIComponent(t)}`;
+const saludo=()=>{const h=new Date().getHours();return h<12?"Buen día":h<20?"Buenas tardes":"Buenas noches"};
+const wa=t=>`https://wa.me/${CFG.wa}?text=${encodeURIComponent(saludo()+", "+t)}`;
 document.querySelectorAll("[data-wa]").forEach(a=>{a.href=wa(a.dataset.wa);a.target="_blank";a.rel="noopener"});
 document.getElementById("svc-grid").innerHTML=SERVICIOS.map(([t,d])=>`<div class="svc"><h3>${t}</h3><p>${d}</p></div>`).join("");
 const type=document.getElementById("q-type");
@@ -168,7 +196,7 @@ type.innerHTML='<option value="">Elegí una opción</option>'+SERVICIOS.map(s=>`
 document.getElementById("quote").addEventListener("submit",e=>{
   e.preventDefault();
   const v=id=>document.getElementById(id).value.trim();
-  const msg=`Hola, soy ${v("q-name")}. Quiero un presupuesto.\nEquipo: ${v("q-type")}${v("q-brand")?` (${v("q-brand")})`:""}\nProblema: ${v("q-desc")}`;
+  const msg=`mi nombre es ${v("q-name")}. Me comunico desde la web de SERV & REP Mantenimiento para solicitar un presupuesto.\n\n*Equipo:* ${v("q-type")}\n*Marca y modelo:* ${v("q-brand")||"No especificado"}\n*Problema:* ${v("q-desc")}\n\nQuedo atento a su respuesta. Muchas gracias.`;
   window.open(wa(msg),"_blank","noopener");
 });
 const sym=document.getElementById("d-sym"),out=document.getElementById("diag-out"),dbtn=document.getElementById("d-btn");
@@ -176,12 +204,23 @@ sym.innerHTML='<option value="">Elegí un síntoma</option>'+Object.keys(SINTOMA
 sym.addEventListener("change",()=>{
   const s=sym.value;
   out.style.display=dbtn.style.display=s?"block":"none";
-  if(s){out.textContent=SINTOMAS[s];dbtn.href=wa(`Hola, mi equipo tiene este problema: ${s}. ¿Pueden revisarlo?`);dbtn.target="_blank";dbtn.rel="noopener"}
+  if(s){out.textContent=SINTOMAS[s];dbtn.href=wa(`me comunico desde la web de SERV & REP Mantenimiento. Mi equipo presenta el siguiente problema: ${s.toLowerCase()}.\n\n¿Podrían revisarlo y orientarme sobre los pasos a seguir? Muchas gracias.`);dbtn.target="_blank";dbtn.rel="noopener"}
 });
-document.getElementById("addr").textContent=CFG.dir;
-document.getElementById("map").href="https://www.google.com/maps/search/?api=1&query="+encodeURIComponent("SERV & REP Mantenimiento, "+CFG.dir);
+const mapUrl=d=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent("SERV & REP Mantenimiento, "+d);
+document.getElementById("suc").innerHTML=CFG.sucursales.map(x=>`<div><h3>${x.n}</h3><p>${x.d}</p><a href="${x.map||mapUrl(x.d)}" target="_blank" rel="noopener">Cómo llegar</a></div>`).join("");
 document.getElementById("call").href="tel:"+CFG.tel;
 document.getElementById("yr").textContent=new Date().getFullYear();
+
+if("serviceWorker" in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));
+let ip;const ib=document.getElementById("install");
+addEventListener("beforeinstallprompt",e=>{e.preventDefault();ip=e;ib.hidden=false});
+ib.addEventListener("click",async()=>{if(!ip)return;ip.prompt();await ip.userChoice;ip=null;ib.hidden=true});
+addEventListener("appinstalled",()=>{ib.hidden=true});
+if(/iphone|ipad/i.test(navigator.userAgent)&&!navigator.standalone)document.getElementById("ios").hidden=false;
+document.getElementById("share").addEventListener("click",async()=>{
+  const d={title:"SERV & REP Mantenimiento",text:"Bobinado y reparación de motores en Cosquín",url:CFG.url};
+  try{if(navigator.share)await navigator.share(d);else{await navigator.clipboard.writeText(CFG.url);alert("Enlace copiado")}}catch(e){}
+});
 </script>
 </body>
 </html>
