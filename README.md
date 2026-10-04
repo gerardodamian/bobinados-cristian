@@ -21,7 +21,7 @@ Web app del taller de bobinado y reparación de motores **SERV & REP Mantenimien
 | Casa central | San Martín 1348, Cosquín, Córdoba |
 | Sucursal Pasaje | Santa Fe 454, Pasaje, Cosquín, Córdoba |
 | Horario | Lunes a viernes de 9 a 13 hs |
-| WhatsApp | 3541 55-2523 |
+| WhatsApp | 3541 59-0980 |
 
 ## Archivos
 
@@ -32,6 +32,7 @@ manifest.webmanifest  Datos de la app instalable
 sw.js                 Service worker (modo sin conexión)
 icon-192.png          Ícono de la app
 icon-512.png          Ícono de la app
+og-image.png          Imagen que se ve al compartir el enlace (WhatsApp, redes)
 qr.png                QR con el enlace de la web
 ```
 
@@ -61,7 +62,7 @@ En el repo, **Settings → Pages** debe apuntar a la rama `master`, carpeta raí
 La app instalada guarda archivos en el celular. Cada vez que cambies algo, subí el número de versión en `sw.js` para que se actualice:
 
 ```js
-const C='servrep-v5'  // cambiar a servrep-v6, v7, etc.
+const C='servrep-v6'  // cambiar a servrep-v7, v8, etc.
 ```
 
 ## Regenerar el código QR
