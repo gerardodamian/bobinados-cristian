@@ -20,7 +20,7 @@ Web app del taller de bobinado y reparación de motores **SERV & REP Mantenimien
 |---|---|
 | Casa central | San Martín 1348, Cosquín, Córdoba |
 | Sucursal Pasaje | Santa Fe 454, Pasaje, Cosquín, Córdoba |
-| Horario | Lunes a viernes de 9 a 13 hs |
+| Horario | Lunes a viernes de 8 a 12:30 y de 15 a 19 hs (miércoles a la tarde cerrado) |
 | WhatsApp | 3541 59-0980 |
 
 ## Archivos
@@ -62,7 +62,7 @@ En el repo, **Settings → Pages** debe apuntar a la rama `master`, carpeta raí
 La app instalada guarda archivos en el celular. Cada vez que cambies algo, subí el número de versión en `sw.js` para que se actualice:
 
 ```js
-const C='servrep-v6'  // cambiar a servrep-v7, v8, etc.
+const C='servrep-v7'  // cambiar a servrep-v8, v9, etc.
 ```
 
 ## Regenerar el código QR
