@@ -62,7 +62,7 @@ En el repo, **Settings → Pages** debe apuntar a la rama `master`, carpeta raí
 La app instalada guarda archivos en el celular. Cada vez que cambies algo, subí el número de versión en `sw.js` para que se actualice:
 
 ```js
-const C='servrep-v7'  // cambiar a servrep-v8, v9, etc.
+const C='servrep-v8'  // cambiar a servrep-v9, v10, etc.
 ```
 
 ## Regenerar el código QR
