@@ -27,7 +27,7 @@ Web app del taller de bobinado y reparación de motores **SERV & REP Mantenimien
 
 ```
 index.html            Página completa (HTML, CSS y JS en un solo archivo)
-logo.png              Logo con fondo transparente
+logo.png              Logo (letras rojas con contorno amarillo) con fondo transparente
 manifest.webmanifest  Datos de la app instalable
 sw.js                 Service worker (modo sin conexión)
 icon-192.png          Ícono de la app
@@ -62,7 +62,7 @@ En el repo, **Settings → Pages** debe apuntar a la rama `master`, carpeta raí
 La app instalada guarda archivos en el celular. Cada vez que cambies algo, subí el número de versión en `sw.js` para que se actualice:
 
 ```js
-const C='servrep-v8'  // cambiar a servrep-v9, v10, etc.
+const C='servrep-v9'  // cambiar a servrep-v10, v11, etc.
 ```
 
 ## Regenerar el código QR
